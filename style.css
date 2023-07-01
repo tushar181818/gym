@@ -18,7 +18,7 @@ body{
 
 
 header{
-    /* width: 100%; */
+    /* width: 100%;  */
     height:100vh;
     background: black;
     clip-path:polygon(0% 0% , 100% 0% ,100% 100% , 80% 80%, 0% 100%);
@@ -306,9 +306,47 @@ textarea{
 
 
 @media only screen and (max-width:420px) {
+    #navbar{
+        display: flex;
+        justify-content: flex-start;
+    }
+    .menu{
+        display: none;
+    }
+    .logo{
+        font-size: 30px;
+        text-align: left;
+    }
+
+    #logo_icon{
+        display: none;
+    }
+
+    .container{
+        flex-direction: column;
+        /* justify-content: flex-start;
+        align-items: flex-start; */
+    }
+
+    header{
+        clip-path:none;
+    }
+
+    #about{
+        margin-top: 50vh;
+    }
+    .right{
+        background-color: black;
+        font-size: 1rem;
+    }
+    .right p h2{
+        font-size: 1rem;
+    }
     
     
     .contact-row{
         flex-direction:column;
     }
+
+
 }
