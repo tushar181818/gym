@@ -1,3 +1,0 @@
-if (self.CavalryLogger) { CavalryLogger.start_js_script(document.currentScript); }/*FB_PKG_DELIM*/
-
-__d("PolarisActivityFeedContext.react",["$InternalEnum","react"],function(a,b,c,d,e,f,g){"use strict";var h=d("react"),i=d("react").useMemo;c=b("$InternalEnum").Mirrored(["ActivityFeedBox","ActivityFeedPage","SidebarNotificationsPanel"]);var j=h.createContext(null);function a(a){var b=a.children,c=a.placement;a=i(function(){return{placement:c}},[c]);return h.jsx(j.Provider,{value:a,children:b})}a.displayName=a.name+" [from "+f.id+"]";g.ActivityFeedPlacement=c;g.PolarisActivityFeedContext=j;g.PolarisActivityFeedContextProvider=a},98,typeof self!=="undefined"&&self.document&&self.document.currentScript);
