@@ -405,6 +405,12 @@ textarea{
     #contact button{
         padding: 10px 30px;
     }
+    #contact .form input,textarea{
+        width: 85%;
+    }
+    #contact .contact-right-col{
+        margin-top: 30px;
+    }
     #contact .contact-right-col p a{
         margin-top: 10px;
         margin-bottom:20px ;
