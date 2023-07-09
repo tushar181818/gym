@@ -348,5 +348,21 @@ textarea{
         flex-direction:column;
     }
 
+    #signup{
+        clip-path: none;
+    }
+    .signup-row{
+        flex-direction: column;
+    }
+    .signup-row .signup-right-col{
+        align-items: center;
+        /* justify-content: center; */
+        text-align: center;
+    }
+    .signup-row .signup-right-col button{
+        padding: 10px 20px;
+        border-radius: 5px;
+    }
+
 
 }
