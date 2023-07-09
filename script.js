@@ -5,3 +5,7 @@ hamburger.addEventListener('click',()=>{
     hamburger.classList.toggle('active');
     menu.classList.toggle('active');
 })
+menu.addEventListener('click',()=>{
+    hamburger.classList.toggle('active');
+    menu.classList.toggle('active');
+})
