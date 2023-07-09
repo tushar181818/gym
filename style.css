@@ -33,6 +33,19 @@ nav{
     align-items: center;
     color: white;
 }
+.hamburger{
+    display: none;
+    width: 60%;
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
 .logo{
     font-size: 50px;
     font-weight:bold;
@@ -319,8 +332,38 @@ textarea{
         display: flex;
         justify-content: flex-start;
     }
+    .hamburger{
+        display: block;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        /* opacity: 0; */
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
     .menu{
-        display: none;
+        /* display: none; */
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #262626;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+    .menu a{
+        margin: 10px 0;
+    }
+    .menu.active{
+        left: 0;
     }
     .logo{
         font-size: 30px;
