@@ -364,5 +364,20 @@ textarea{
         border-radius: 5px;
     }
 
+    #services{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: center; */
+    }
+
+    .services-row{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 1em;
+        grid-row-gap: 50px;
+        width: 70vw;
+    }
+
 
 }
